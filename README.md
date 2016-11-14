@@ -18,3 +18,6 @@ gulp testKarma
 # or run via karma
 karma start
 
+# Note: This uses html reporter to generate a test output file at - test/testOutput.html
+
+This is useful because reading test errors from the command line is difficult with all the noisy information.
