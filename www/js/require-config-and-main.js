@@ -1,9 +1,10 @@
+//requirejs = (typeof requirejs!== 'undefined')? requirejs:{config:function(){}};
 requirejs.config({
+		baseUrl:'js/modules',
     paths: {
         'jquery': '../lib/jquery',
         'underscore': '../lib/underscore'
     },
-
     shim: {
         'underscore': {
             exports: '_'
@@ -11,7 +12,6 @@ requirejs.config({
     }
 });
 
-define(['app', 'jquery'], function (App, $) {
-    var app = new App($('body'));
-    app.render();
+require(['app'],function(app){
+
 });

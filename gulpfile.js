@@ -1,5 +1,15 @@
 var gulp = require('gulp');
 var KarmaTestServer = require('karma').Server;
+var browserSync = require('browser-sync').create(); // note must install globally: npm install -g browser-sync
+
+gulp.task('server', function() {
+	browserSync.init({
+			server: {
+					baseDir: "./www/",
+					index: "index.html"
+			}
+	});
+});
 
 
 gulp.task('testKarma', function (done) {

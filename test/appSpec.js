@@ -14,8 +14,7 @@ define(['app', 'jquery', 'underscore'], function(App, $, _) {
 
 
         it('works for app', function() {
-
-            expect('success').toEqual('fail');
+            expect('success').toEqual('fail!');
         });
 
         it('works for underscore', function() {
